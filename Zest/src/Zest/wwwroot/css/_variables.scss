@@ -1,0 +1,16 @@
+/*!
+ * Zest.io - Variables
+ * The variables in this SASS file will auto-replace the ones in the Bootstrap SASS file.
+ */
+
+@import "colours";
+
+//Calculate body displacement due to size of navbar
+$body-shift: 100px + 80px;
+
+//Replace some of Bootstrap's colours with these:
+$brand-primary:$lime !default;
+$navbar-inverse-bg: $lime !default;
+$navbar-inverse-color: lighten($lime, 55%) !default;
+$navbar-inverse-link-color:lighten($lime, 55%) !default;
+

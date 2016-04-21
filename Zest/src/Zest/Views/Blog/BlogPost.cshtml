@@ -1,0 +1,25 @@
+﻿@model Zest.Models.BlogPost
+@{
+    ViewData["Title"] = "Blogpost";
+}
+
+<!--Breadcrumbs for Contact Page-->
+<!--
+<div class="container-fluid">
+    <ol class="breadcrumb">
+        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+        <li class="active"><a asp-controller="Blog" asp-action="Blog">Blog</a></li>
+    </ol>
+</div>
+-->
+
+<div class="container col-md-8 col-md-push-2">
+   <h1>@Model.title</h1>
+    <br />
+    <div>
+        <p>@Model.body</p>
+        <br />
+        <p>@Model.author, @Model.postedOn</p>
+    </div>
+    
+</div>

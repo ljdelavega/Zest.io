@@ -1,0 +1,73 @@
+/*!
+ * Zest.io - Typography
+ * Adjustingthe typography of Bootstrap, along with adding new styles to add typographic styles. 
+ */
+
+body {
+    font-size:calc(0.7em + 0.4vw + 0.3vh);
+}
+
+p, ul, ol, li, blockquote {
+    font-size:100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:bold;
+}
+
+h1 {
+    font-size:200%;
+}
+
+h2 {
+    font-size:170%;
+}
+
+h3 {
+    font-size:160%;
+}
+
+h4 {
+    font-size:150%;
+}
+
+h5 {
+    font-size:140%;
+}
+
+h6 {
+    font-size:130%;
+}
+
+.lead {
+    font-size:200%;
+}
+
+.navbar-nav > li {
+    text-transform:uppercase;
+    font-size:0.8em;
+    font-weight:bold;
+}
+
+/* Media heading - smaller text */
+.media-heading {
+    font-size:100%;
+}
+
+.overlay h1, .overlay h2, .overlay h3, .overlay h4, .overlay h5, .overlay h6 {
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 1);
+}
+
+/* Label - from Bootstrap */
+.label {
+    text-transform:uppercase;
+}
+
+footer a, footer p a {
+    color:#ffffff;
+    text-decoration:underline;
+}
+
+footer a:hover, footer p a:hover {
+    color:#838383;
+}

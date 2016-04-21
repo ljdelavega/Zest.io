@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Service Name";
+}
+
+<!--Breadcrumbs for Contact Page-->
+<div class="container-fluid">
+    <ol class="breadcrumb">
+        <li><a asp-controller="Services" asp-action="Services">Services</a></li>
+        <li class="active"><a asp-controller="Service" asp-action="ExampleService">Specific Service</a></li>
+    </ol>
+</div>
+
+<div class="container">
+    <h2>Service Name</h2>
+    <p>
+        Try-hard YOLO squid, retro bitters tote bag PBR&B XOXO locavore irony humblebrag biodiesel.
+        Actually plaid franzen, migas XOXO skateboard etsy butcher brunch pinterest. Asymmetrical ramps seitan bitters,
+        narwhal direct trade irony. Hashtag celiac letterpress, squid craft beer fashion axe readymade jean shorts whatever.
+        Four loko 3 wolf moon migas fixie bushwick, tattooed waistcoat gastropub. Hoodie squid tofu, 90's seitan chambray
+        post-ironic fingerstache. Mustache asymmetrical green juice, austin selvage microdosing fixie ugh post-ironic fingerstache.
+    </p>
+
+    <br />
+
+    <h2>How our Process Works</h2>
+
+    <p>
+        Chicharrones roof party mixtape, organic tousled paleo church-key sustainable actually mustache. Freegan organic fap, DIY
+        quinoa neutra selvage. DIY blue bottle beard, art party banh mi fixie bespoke cred etsy next level. IPhone raw denim quinoa,
+        pinterest chambray fanny pack truffaut semiotics sustainable. Waistcoat craft beer small batch forage. Seitan fap meggings
+        quinoa gluten-free organic. 8-bit roof party tousled, mixtape freegan hashtag cold-pressed.
+    </p>
+
+    <br />
+    <br />
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6" align="center">
+            <img src="~/images/placeholders/img1example.jpg" class="img-responsive">
+            <br />
+            <br />
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+            <p>
+                Bespoke four dollar toast trust fund messenger bag heirloom artisan. DIY typewriter man braid, gochujang etsy pabst ethical.
+                Irony meditation listicle kinfolk church-key chillwave. Church-key austin tilde flexitarian 90's. Bicycle rights deep v
+                gentrify chia green juice. Gastropub sustainable migas tote bag. Venmo fashion axe cornhole PBR&B, hoodie literally hella
+                3 wolf moon hammock affogato artisan ramps marfa farm-to-table asymmetrical. Yr mustache ramps, health goth roof party actually
+                tousled. Flannel keytar hammock microdosing, hoodie leggings squid disrupt tacos tumblr pitchfork PBR&B austin knausgaard. Paleo
+                fashion axe kogi organic, bitters 8-bit polaroid pitchfork neutra poutine pork belly sriracha banh mi. Hoodie umami cornhole green
+                juice lo-fi, asymmetrical meh +1 ethical. Pour-over crucifix chambray, kombucha squid fashion axe chillwave ramps post-ironic tofu
+                listicle drinking vinegar. Butcher affogato celiac, lumbersexual yuccie seitan kitsch readymade meh bespoke portland cornhole wayfarers.
+                Seitan messenger bag selvage, umami street art brunch small batch pickled synth austin sartorial.
+            </p>
+        </div>
+    </div>
+
+    <h2>Projects Using Service</h2>
+
+    <!-- Blog Row -->
+    <div class="row">
+        <div class="col-sm-6 col-md-6">
+            <a href="~/Projects/Projects">
+                <div class="card card-inverse">
+                    <img class="card-img img-responsive" src="~/images/placeholders/img3about.jpg">
+                    <div class="card-img-overlay overlay">
+                        <h2 class="card-title">McDonalds Canada Redesign</h2>
+                        <span class="label label-primary">Web Dev</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-6">
+            <a href="~/Projects/Projects">
+                <div class="card card-inverse">
+                    <img class="card-img img-responsive" src="~/images/placeholders/img4about.jpg">
+                    <div class="card-img-overlay overlay">
+                        <h2 class="card-title">Apple.com Website Redesign</h2>
+                        <span class="label label-primary">Web Dev</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="row">
+        <div class="col-sm-6 col-md-6">
+            <a class="btn btn-primary btn-xlg btn-block" asp-controller="Projects" asp-action="Projects" role="button">View All Projects</a>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="row text-center">
+        <div class="col-sm-6 col-md-6">
+            <p class="lead text-center">Interested in adding some zest to your next web project? Give us a shout!</p>
+        </div>
+        <div class="col-sm-6 col-md-6">
+            <br />
+            <a class="btn btn-primary btn-xlg" asp-controller="Contact" asp-action="Contact" role="button">Get in Touch Now</a>
+        </div>
+    </div>
+</div>

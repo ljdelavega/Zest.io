@@ -1,0 +1,64 @@
+<!--
+Careers Junior Software Developer page for Zest.io
+Authors: Lester Dela Vega
+-->
+
+@{
+    ViewData["Title"] = "Careers - Postings - Junior Software Developer";
+}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<div class="container-fluid">
+    <ol class="breadcrumb">
+        <li><a asp-controller="Careers" asp-action="Careers">Careers</a></li>
+        <li><a asp-controller="Careers" asp-action="Postings">Postings</a></li>
+        <li class="active"><a asp-controller="Careers" asp-action="SpecificPosting">Junior Software Developer</a></li>
+    </ol>
+</div>
+
+<div class="page-header">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-8">
+            <h1>Junior Software Developer</h1>
+            <p>
+                Are you the brightest car in the parking lot or the fastest lightbulb in the shop?
+                Do you want to be a part of something exciting? How about having a real influence over a project's direction?
+                If that sounds like you, then don't hesitate! Apply now to become a part of Zest!
+            </p>
+            <br />
+            <a class="btn-primary btn-lg" asp-controller="Careers" asp-action="Postings" role="button"><span class="glyphicon glyphicon-arrow-left"></span>        Back to Postings</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Requirements</h2>
+            <h3>Minimum</h3>
+            <ul>
+                <li>Degree in Computer Science or Software Engineering</li>
+                <li>Experience in HTML, CSS, and JavaScript</li>
+                <li>Willingness to work with a great team!</li>
+            </ul>
+            <br />
+            <h3>Preferred</h3>
+            <ul>
+                <li>Past experience in professional web development</li>
+                <li>Experience with ASP.NET MVC, Ruby on Rails, or other web development framework</li>
+            </ul>
+            <br />
+            <div class="row">
+                <!--
+                <div class="col-xs-5 col-sm-4 col-md-3">
+                    <a class="btn-primary btn-lg" asp-controller="Careers" asp-action="Postings" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Back to Postings</a>
+                </div>
+                <div class="col-xs-push-1 col-xs-5 col-sm-push-4 col-sm-4 col-md-push-6 col-md-3">
+                    <a class="btn-primary btn-lg" href="#" role="button"><span class="glyphicon glyphicon-envelope"></span> Apply Via Email</a>
+                </div>
+                -->
+                <a class="btn-primary btn-lg" href="#" role="button"><span class="glyphicon glyphicon-envelope"></span>       Apply Via Email</a>
+            </div>
+        </div>
+    </div>
+</div>

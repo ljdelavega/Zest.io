@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - Zest</title>
+
+        <environment names="Development">
+            <link rel="stylesheet" href="~/css/style.css" />
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        </environment>
+        <environment names="Staging,Production">
+            <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css"
+                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+                  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+            <link rel="stylesheet" href="~/css/style.min.css" asp-append-version="true" />
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        </environment>
+        @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
+    </head>
+    <body>
+
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="top-bar">
+                <div class="logo">
+                    <a asp-controller="Home" asp-action="Index" class="brand-logo"></a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="hamburger-label">Menu</span>
+                    </button>
+                    <div class="logo">
+                        <a asp-controller="Home" asp-action="Index" class="brand-logo visible-xs-block"></a>
+                    </div>
+                    <!--<a asp-controller="Home" asp-action="Index" class="navbar-brand">Zest</a>-->
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a asp-controller="Services" asp-action="Services">Services</a></li>
+                        <li><a asp-controller="Projects" asp-action="Projects">Projects</a></li>
+                        <li><a asp-controller="About" asp-action="About">About</a></li>
+                        <li><a asp-controller="Blog" asp-action="Blog">Blog</a></li>
+                        <li><a asp-controller="Contact" asp-action="Contact">Contact</a></li>
+                        <li><a asp-controller="Careers" asp-action="Careers">Careers</a></li>
+                    </ul>
+                    @await Html.PartialAsync("_LoginPartial")
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            
+            @RenderBody()
+            <hr />
+                
+        </div>
+
+
+        <footer class="footer-distributed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-3 footer-left">
+                        <div>
+                            <i class="fa fa-map-marker"></i>
+                            <p>
+                                Zest.io<br />
+                                2500 University Drive NW<br />
+                                Calgary, Alberta, Canada<br />
+                                T2N 1N4
+                                <br />
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3 footer-center">
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <p><a href="tel:1-403-123-4567">403-123-4567</a></p>
+                        </div>
+
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:contact@zest.io">contact@zest.io</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 footer-right">
+                        <ul class="footer-links">
+                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a asp-controller="Services" asp-action="Services">Services</a></li>
+                            <li><a asp-controller="Projects" asp-action="Projects">Projects</a></li>
+                            <li><a asp-controller="About" asp-action="About">About</a></li>
+                            <li><a asp-controller="Blog" asp-action="Blog">Blog</a></li>
+                            <li><a asp-controller="Contact" asp-action="Contact">Contact</a></li>
+                            <li><a asp-controller="Careers" asp-action="Careers">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-icons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                </div>
+                <p>&copy; 2016 - Zest. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <environment names="Development">
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>
+        </environment>
+        <environment names="Staging,Production">
+            <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"
+                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                    asp-fallback-test="window.jQuery">
+            </script>
+            <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"
+                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+            </script>
+            <script src="~/js/site.min.js" asp-append-version="true"></script>
+        </environment>
+
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

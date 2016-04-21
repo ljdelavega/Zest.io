@@ -1,0 +1,55 @@
+<!--
+Careers Postings page for Zest.io
+Authors: Lester Dela Vega    
+-->
+
+@{
+    ViewData["Title"] = "Careers - Postings";
+}
+
+<div class="container-fluid">
+    <ol class="breadcrumb">
+        <li><a asp-controller="Careers" asp-action="Careers">Careers</a></li>
+        <li class="active"><a asp-controller="Careers" asp-action="Postings">Postings</a></li>
+    </ol>
+</div>
+
+<div class="page-header">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-8">
+            <h1>Job Postings</h1>
+            <p>
+                Are you the brightest car in the parking lot or the fastest lightbulb in the shop?
+                Do you want to be a part of something exciting? How about having a real influence over a project's direction?
+                If that sounds like you, then don't hesitate! Apply now to become a part of Zest!
+            </p>
+            <br />
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="table-responsive">
+                <table class="table-striped" style="border-collapse:separate; border-spacing:0 10px;">
+                    <tr>
+                        <th class="col-xs-6 col-sm-8 col-md-8">Name of Position</th>
+                        <th class="col-xs-3 col-sm-2 col-md-2">Job Type</th>
+                        <th class="col-xs-3 col-sm-2 col-md-2">Date Posted</th>
+                    </tr>
+                    <tr>
+                        <td class="col-xs-6 col-sm-8 col-md-8"><a asp-controller="Careers" asp-action="SpecificPosting">Junior Software Developer</a></td>
+                        <td class="col-xs-3 col-sm-2 col-md-2">Developer</td>
+                        <td class="col-xs-3 col-sm-2 col-md-2">April 1st, 2016</td>
+                    </tr>
+                    <tr>
+                        <td class="col-xs-6 col-sm-8 col-md-8"><a asp-controller="Careers" asp-action="SpecificPosting">Marketing Manager</a></td>
+                        <td class="col-xs-3 col-sm-2 col-md-2">Marketing</td>
+                        <td class="col-xs-3 col-sm-2 col-md-2">April 1st, 2016</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

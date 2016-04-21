@@ -1,0 +1,27 @@
+﻿@model Zest.Models.Blog
+@{
+    ViewData["Title"] = "Blog";
+}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<div class="container-fluid">
+    @foreach (var blogpost in Model.blogposts)
+    {
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+               <img class="img card-image media-object img-responsive" src="~/images/@blogpost.imgName" />
+            </div>
+            <div class="blog-post col-lg-8 col-md-8 col-sm-8">
+                <h1 class="blog-title"><a href="/Blog/BlogPost/@blogpost.id">@blogpost.title</a></h1>
+
+                <p class="blog-summary">@blogpost.summary ...</p>
+                <p class="blog-summary-detail">by @blogpost.author posted on @blogpost.postedOn.ToShortDateString()</p>
+                <a>Read on</a>
+                <div class="border-line"></div>
+            </div>
+        </div>
+        
+
+    }
+
+</div>

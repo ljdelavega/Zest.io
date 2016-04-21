@@ -1,0 +1,22 @@
+/*!
+ * Zest.io - Buttons
+ * Modifying the Bootstrap buttons.
+ */
+
+@import "colours";
+
+/* New Button Stylings */
+.btn {
+	box-shadow: 0 3px 0 0 darken($lime, 15%);
+}
+
+.btn:active, .btn.active {
+	box-shadow: none;
+	margin-bottom: -3px;
+	margin-top: 3px;
+}
+
+.btn-xlg {
+    padding:0.8em 3.1em 0.8em 3.1em;
+    font-size:130%;
+}
